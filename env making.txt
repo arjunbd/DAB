@@ -1,0 +1,12 @@
+We create a virtual environment so we can keep installed libraries and packages separate from our main terminal environment. Different modules can require very specific versions of libraries, so a virtual environment helps to keep things separate from the rest of our development work. We’ll do that by installing virtualenv and creating a DAB environment in our project directory.
+
+mkdir -p /home/pi/DAB
+cd /home/pi/DAB
+python -m pip install virtualenv
+python -m venv dab-env
+
+Now, we have a virtual environment created in our DAB directory. Each time before executing the program, we must first activate the dab-env virtual environment, as that’s where all of our packages and libraries are stored. To do that, we run the activate script in our environment’s directory with:
+
+source dab-env/bin/activate
+
+The prompt should change to have a (dab-env) preceding the directory listing. This will let you know that you are working in a virtual environment.
