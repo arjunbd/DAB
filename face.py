@@ -1,3 +1,4 @@
+#standalone face detection
 import pymongo
 #from io import BytesIO
 #from PIL import Image
